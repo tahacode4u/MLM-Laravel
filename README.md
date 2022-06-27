@@ -7,6 +7,11 @@ MLM is Multi Level Marketing relates task or assignment for practical in laravel
 - PHP 8+ Version
 - Laravel 9 Version of (Jetstream Livewire)
 
+Steps:
+- php artisan migrate
+- php artisan db:seed
+- set your email configs to send verification email in .env file
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
