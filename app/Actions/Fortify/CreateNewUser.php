@@ -45,7 +45,7 @@ class CreateNewUser implements CreatesNewUsers
             'mlm_level' => (!empty($existRefCodeUser)) ? $existRefCodeUser->id:0, 
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'balance' => $this->newUserBonus,
+            'balance' => (!empty($existRefCodeUser)) ? $this->newUserBonus:0,
         ];
 
         // create user
